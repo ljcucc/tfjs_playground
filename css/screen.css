@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+*{
+  font-size: 16px;
+  font-family: "Arial";
+}
+
+input, select{
+  padding: 8px;
+}
+
+.list{
+ padding: 8px;
+}
+
+#app{
+//  padding: 8px;
+}
+
+.list>div{
+  padding: 8px;
+  margin-bottom: 8px;
+  
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.15);
+  
+  transition: border 0.15s;
+}
+
+.list>div:hover{
+  border: 1px solid rgba(0,0,0,.35);
+}
+
+.layers{
+  padding: 8px 16px;
+}
+
+.dialog{
+   border-radius: 10px;
+   padding: 16px;
+   z-index: 1000;
+   background: white;
+ }
+ 
+ .dialog-frame{
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+ }
+ 
+ .dialog-background{
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0,0,0,.35);
+   z-index: 990;
+}
